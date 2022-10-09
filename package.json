@@ -1,0 +1,14 @@
+{
+  "name": "unusual-test-cases",
+  "version": "1.0.0",
+  "description": "unusual test cases",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dawid",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.9.0"
+  }
+}

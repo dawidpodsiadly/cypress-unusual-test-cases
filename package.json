@@ -11,5 +11,8 @@
   "devDependencies": {
     "cypress": "^10.9.0",
     "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "cypress-drag-drop": "^1.1.1"
   }
 }

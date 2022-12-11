@@ -1,7 +1,11 @@
 it('Verifies dowlanded files', () => {
     cy.visit('/download');
-    cy.get('a[href="download/LambdaTest.txt"]').click();
-    cy.readFile('cypress/downloads/LambdaTest.txt');
-    cy.get('a[href="download/LambdaTest.txt"]');
-})
+    cy.window().document().then(function (doc) {
+        doc.addEventListener('click', () => {
+          setTimeout(function () { doc.location.reload() }, 2000)
+        })
+        cy.get('a[href="download/Test.png').click()
+      })
 
+      cy.readFile('cypress/downloads/Test.png');
+})

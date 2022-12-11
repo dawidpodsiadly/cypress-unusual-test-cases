@@ -9,6 +9,7 @@ module.exports = defineConfig({
     "viewportWidth": 1920,
     "viewportHeight": 1080,
     "chromeWebSecurity": false,
-    "downloadsFolder": "cypress/downloads"
+    "downloadsFolder": "cypress/downloads",
+    "trashAssetsBeforeRuns": true,
   },
 });

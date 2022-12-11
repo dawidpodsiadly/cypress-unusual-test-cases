@@ -6,8 +6,9 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     "baseUrl": "http://the-internet.herokuapp.com/",
-    "viewportWidth":1920,
-    "viewportHeight":1080,
-    "chromeWebSecurity": false
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "chromeWebSecurity": false,
+    "downloadsFolder": "cypress/downloads"
   },
 });

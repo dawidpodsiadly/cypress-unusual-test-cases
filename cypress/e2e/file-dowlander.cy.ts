@@ -6,6 +6,5 @@ it('Verifies dowlanded files', () => {
         })
         cy.get('a[href="download/test.png').click()
       })
-
       cy.readFile('cypress/downloads/test.png');
 })

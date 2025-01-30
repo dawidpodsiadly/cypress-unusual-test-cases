@@ -4,8 +4,8 @@ it('Verifies dowlanded files', () => {
         doc.addEventListener('click', () => {
           setTimeout(function () { doc.location.reload() }, 2000)
         })
-        cy.get('a[href="download/Test.png').click()
+        cy.get('a[href="download/test.png').click()
       })
 
-      cy.readFile('cypress/downloads/Test.png');
+      cy.readFile('cypress/downloads/test.png');
 })

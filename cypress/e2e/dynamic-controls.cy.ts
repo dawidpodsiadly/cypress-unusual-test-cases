@@ -1,8 +1,4 @@
 describe('Checks dynamic controls', () => {
-    beforeEach(() => {
-        cy.visit('/dynamic_loading');
-    })
-
     it('Checks Add/Remove button', () => {
         cy.visit('/dynamic_controls');
         cy.get('#checkbox input').should('be.visible').and('not.be.checked');
@@ -20,7 +16,6 @@ describe('Checks dynamic controls', () => {
 
     it('Checks Enable/Disable button', () => {
         const inputText = 'I am testing for fun';
-
         cy.visit('/dynamic_controls');
         cy.get('#input-example input').should('be.disabled');
         cy.get('#input-example button').should('have.text', 'Enable').click().should('have.text', 'Disable');
@@ -31,5 +26,5 @@ describe('Checks dynamic controls', () => {
         cy.get('#input-example input').should('be.disabled').and('have.value', inputText);
         cy.get('#input-example button').click().should('have.text', 'Disable');
         cy.get('#input-example input').clear().type(`${inputText} Edited`).should('have.value', `${inputText} Edited`);
-})
+    })
 })

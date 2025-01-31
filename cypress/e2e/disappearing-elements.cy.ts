@@ -1,6 +1,5 @@
 it('checks if gallery button exists or not', () => {
   cy.visit('/disappearing_elements');
-
   cy.get("body").then(body => { 
     if (body.find('a[href="/gallery/"]').length > 0) {   
       cy.get('a').contains('Home').should('be.visible');

@@ -1,3 +1,5 @@
+// This example demonstrates when elements (e.g., checkbox, input field, etc.) are changed asynchronously.
+
 describe('Checks dynamic controls', () => {
     it('Checks Add/Remove button', () => {
         cy.visit('/dynamic_controls');

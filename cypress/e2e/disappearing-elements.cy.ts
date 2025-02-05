@@ -1,3 +1,5 @@
+// This example demonstrates when elements on a page change by disappearing/reappearing on each page load.
+
 it('checks if gallery button exists or not', () => {
   cy.visit('/disappearing_elements');
   cy.get("body").then(body => { 

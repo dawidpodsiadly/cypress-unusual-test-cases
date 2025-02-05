@@ -1,3 +1,5 @@
+// Add/Remove Elements
+
 it('Add/Remove Elements', () => {
     cy.visit('/add_remove_elements/');  
     cy.get('button.added-manually').should('not.exist');

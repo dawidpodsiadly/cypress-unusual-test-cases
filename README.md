@@ -10,14 +10,14 @@ To run the tests, follow these steps:
 
 1. Install the necessary dependencies:
 
-    ```
-    npm install
-    ```
+   ```
+   npm install
+   ```
 
 2. Open Cypress:
 
-    ```
-    npx cypress open
-    ```
+   ```
+   npx cypress open
+   ```
 
 3. Choose the browser (e.g., Electron or Chrome) and run the tests. The test cases will automatically appear in the Cypress interface.

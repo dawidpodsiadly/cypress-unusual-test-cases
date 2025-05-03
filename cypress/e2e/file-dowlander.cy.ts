@@ -1,10 +1,10 @@
-it('Verifies dowlanded files', () => {
+describe('File Downloader', () => {
+  beforeEach(() => {
     cy.visit('/download');
-    cy.window().document().then(function (doc) {
-        doc.addEventListener('click', () => {
-          setTimeout(function () { doc.location.reload() }, 2000)
-        })
-        cy.get('a[href="download/test.png').click()
-      })
-      cy.readFile('cypress/downloads/test.png');
-})
+  });
+
+  it('Verifies Dowlanded File', () => {
+    cy.get('a[href="download/real.jpg').click();
+    cy.readFile('cypress/downloads/real.jpg');
+  });
+});

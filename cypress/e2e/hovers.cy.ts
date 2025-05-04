@@ -17,5 +17,5 @@ describe('Hovers', () => {
     cy.get('div.figure').eq(2).realHover();
     cy.get('div.figcaption h5').eq(2).should('have.text', 'name: user3').and('be.visible');
     cy.get('div.figcaption a').eq(2).should('have.text', 'View profile').and('be.visible');
-  });    
+  });
 });

@@ -1,4 +1,4 @@
-describe('Secure File Downloader', () => {
+describe('Secure File Download', () => {
   beforeEach(() => {
     cy.visit('/download_secure', {
       auth: {

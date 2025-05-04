@@ -1,4 +1,4 @@
-describe('JQueryUI - Menu', () => {
+describe('JQuery UI Menus', () => {
   beforeEach(() => {
     cy.visit('/jqueryui/menu#');
   });

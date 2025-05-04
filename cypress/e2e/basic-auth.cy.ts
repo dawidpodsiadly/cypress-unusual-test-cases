@@ -1,4 +1,4 @@
-describe('Basic Authorization', () => {
+describe('Basic Auth', () => {
   beforeEach(() => {
     cy.visit('/basic_auth', {
       auth: {
@@ -8,7 +8,7 @@ describe('Basic Authorization', () => {
     });
   });
 
-  it('Basic Authorization', () => {
+  it('Basic Auth', () => {
     cy.get('p').contains('Congratulations! You must have the proper credentials.').should('be.visible');
   });
 });

@@ -1,4 +1,4 @@
-describe('Opening a new window', () => {
+describe('Multiple Windows', () => {
   beforeEach(() => {
     cy.visit('/windows');
   });

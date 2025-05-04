@@ -1,4 +1,4 @@
-describe('Notification Message', () => {
+describe('Notification Messages', () => {
   beforeEach(() => {
     cy.visit('/notification_message_rendered');
   });

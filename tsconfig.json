@@ -2,11 +2,11 @@
   "compilerOptions": {
     "target": "es5",
     "lib": ["es5", "dom"],
-    "types": ["cypress", "node", "cypress-real-events"]  // Dodaj cypress-real-events tutaj
+    "types": ["cypress", "node", "cypress-real-events"]
   },
   "include": [
     "**/*.ts",
-    "cypress/support/**/*.js",  // Poprawienie include dla całej struktury
-    "cypress/integration/**/*.js"  // Dodanie obsługi testów
+    "cypress/support/**/*.js",
+    "cypress/integration/**/*.js"
   ]
 }
